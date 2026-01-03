@@ -47,7 +47,7 @@ The system follows a typical 3-tier architecture with a heavy emphasis on cachin
 ```mermaid
 graph TD
     Client[Client / Browser] --> LB[Load Balancer]
-    LB --> Web[Web Service (Python / FastAPI)]
+    LB --> Web["Web Service (Python / FastAPI)"]
     
     subgraph "Data Layer"
         Web --> Cache[(Redis Cache)]
